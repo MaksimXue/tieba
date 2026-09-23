@@ -21,7 +21,7 @@ jobs:
         with:
           fetch-depth: 0
           # 使用默认的GITHUB_TOKEN，它对当前仓库有写权限
-          token: ${{ github.token }}
+          token: ${{ secrets.GH_PAT }}
       
       - name: 配置Git
         run: |
